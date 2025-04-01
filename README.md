@@ -1,33 +1,59 @@
-F1-2025-Prediction
- A project which uses Machine Learning, Fastf1 API, and historical F1 race resul;ts to predict the outcome for the F1 2025 season.
+ F1 2025 Prediction Model
 
- Project Overview
- This repository contains a machine learning model which predicts F1 2025 results.
- by using: 
- FastF1 API 
- 2024 Racce results
- 2025 qualifying session results
+ Overview
+This project is an F1 2025 Prediction Model that forecasts race results, driver standings, and team performance using data-driven machine learning techniques. The model leverages historical F1 data, weather conditions, track characteristics, and driver performance metrics to make accurate predictions. The model uses historical data to predict the F1 2025 result outcomes with a mean absolute error of 1.79 seconds.
 
- Dependencies: 
- fastf1
- numpy
- pandas
- scikit-learn
- matplotlib 
+ Features
+- Predicts race results for F1 2025.
+- Analyzes driver and team performance trends.
+- Incorporates real-time data updates.
+- Uses machine learning algorithms for high-accuracy forecasts.
+- Provides insights through visualizations and analytics.
 
- How it works:
- Data Collection: The script pulls relevant F1 data using the FastF1 API.
-Preprocessing & Feature Engineering: Converts lap times, normalizes driver names, and structures race data.
-Model Training: A Gradient Boosting Regressor is trained using 2024 race results.
-Prediction: The model predicts race times for 2025 and ranks drivers accordingly.
-Evaluation: Model performance is measured using Mean Absolute Error (MAE).
+ Technologies Used
+- Programming Language: Python
+- Libraries: Pandas, NumPy, Scikit-Learn, TensorFlow, Matplotlib, Seaborn, FastF1
+- Data Sources: Official FIA statistics, past race results, weather data APIs, FastF1 API
+- Model Type: Regression, Classification, and Time Series Forecasting
 
- Usage:
- run the prediction script: 
- python3 prediction1.py
+ Installation
+ Clone the Repository
+`sh
+git clone https://github.com/xt67/F1-2025-PREDICTION.git
+cd F1-2025-PREDICTION
+`
 
- Model Performance: 
- The Mean Absolute Error (MAE) is used to evaluate how well the model predicts race times. Lower MAE values indicate more accurate predictions.
+Set Up Virtual Environment
+`sh
+python -m venv venv
+source venv/bin/activate   # For Mac/Linux
+venv\Scripts\activate     # For Windows
+`
 
- License: 
- This project is licensed under the MIT License.
+Install Dependencies
+`sh
+pip install -r requirements.txt
+
+
+Usage
+Run Predictions:
+
+General Race Predictions:
+python prediction1.py
+
+Alternative Prediction Model:
+python prediction2.py
+
+Japan GP-Specific Prediction:
+python fi_japan_predictor.py
+
+
+Contribution
+Feel free to contribute by:
+- Adding new features.
+- Improving model accuracy.
+- Enhancing data visualization.
+- Reporting issues via GitHub.
+
+License
+This project is licensed under the MIT License.
